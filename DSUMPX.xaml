@@ -1,0 +1,39 @@
+﻿<Window x:Class="DSUMultiplayerProxy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DSUMultiplayerProxy"
+        mc:Ignorable="d"
+        Title="DSUMPX" Height="320" Width="395">
+    <Grid>
+        <TextBlock x:Name="textBlockTitle" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="DSU Multiplayer Proxy Server" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockSelectController" HorizontalAlignment="Left" Margin="249,70,0,0" TextWrapping="Wrap" Text="Controller Mapping" VerticalAlignment="Top" RenderTransformOrigin="0.714,0.771"/>
+        <Grid Margin="10,44,149,198">
+            <TextBox x:Name="ipTextBoxClient1" HorizontalAlignment="Left" Margin="0,16,0,0" TextWrapping="Wrap" Text="127.0.0.1:26760" VerticalAlignment="Top" Width="135" Height="20"/>
+            <TextBlock x:Name="textBlockClient1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Client 1" VerticalAlignment="Top"/>
+            <Button x:Name="connectButtonClient1" Click="ConnectButtonClient_Click" Content="Connect" HorizontalAlignment="Left" Margin="140,16,0,0" VerticalAlignment="Top" Width="75"/>
+        </Grid>
+        <Grid Margin="10,91,149,152">
+            <TextBox x:Name="ipTextBoxClient2" HorizontalAlignment="Left" Margin="0,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="135" Height="20"/>
+            <TextBlock x:Name="textBlockClient2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Client 2" VerticalAlignment="Top"/>
+            <Button x:Name="connectButtonClient2" Click="ConnectButtonClient_Click" Content="Connect" HorizontalAlignment="Left" Margin="140,16,0,0" VerticalAlignment="Top" Width="75"/>
+        </Grid>
+        <Grid Margin="10,137,149,107">
+            <TextBox x:Name="ipTextBoxClient3" HorizontalAlignment="Left" Margin="0,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="135" Height="20"/>
+            <TextBlock x:Name="textBlockClient3" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Client "/><Run Text="3"/><LineBreak/><Run/></TextBlock>
+            <Button x:Name="connectButtonClient3" Click="ConnectButtonClient_Click" Content="Connect" HorizontalAlignment="Left" Margin="140,16,0,0" VerticalAlignment="Top" Width="75"/>
+        </Grid>
+        <Grid Margin="10,182,149,62">
+            <TextBox x:Name="ipTextBoxClient4" HorizontalAlignment="Left" Margin="0,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="135" Height="20"/>
+            <TextBlock x:Name="textBlockClient4" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="Client 4" />
+            <Button x:Name="connectButtonClient4" Click="ConnectButtonClient_Click" Content="Connect" HorizontalAlignment="Left" Margin="140,16,0,0" VerticalAlignment="Top" Width="75"/>
+        </Grid>
+        <TextBlock x:Name="textBlockServerPort" HorizontalAlignment="Left" Margin="63,250,0,0" TextWrapping="Wrap" Text="Local Server Port" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxServerPort" HorizontalAlignment="Left" Margin="156,248,0,0" TextWrapping="Wrap" Text="26761" VerticalAlignment="Top" Width="64" Height="20"/>
+        <Button x:Name="startServerButton" Content="Start" Click="StartServerButton_Click" HorizontalAlignment="Left" Margin="225,248,0,0" VerticalAlignment="Top" Width="75"/>
+        <ListBox x:Name="listBoxControllerMap" IsEnabled="False" HorizontalAlignment="Left" Height="75" Margin="259,97,0,0" VerticalAlignment="Top" Width="94"/>
+        <TextBlock x:Name="textBlockControllerMap" HorizontalAlignment="Left" Margin="243,104,0,0" TextWrapping="Wrap" Text="1 2 3 4" VerticalAlignment="Top" Height="75" Width="11"/>
+
+    </Grid>
+</Window>
