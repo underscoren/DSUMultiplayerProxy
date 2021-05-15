@@ -10,9 +10,10 @@ Allows multiple DSU servers (possibly across the internet) to act as a single DS
 
 ### Usage
 
- 1. Enter the IP address of each remote server in the Client box. Up to four remote servers can be connected to at once.
+ 1. Enter the IP address of each remote server in the Client box. 
+ * Up to four remote servers can be connected to at once.
  2. Press the "Connect" button to establish a connection with the remote server
- 3. The order in which you connect the servers is the number of each player
+ * The order in which you connect the servers is the number of each player
  4. Once all the server are connected, start the local server
  5. Done!
 
